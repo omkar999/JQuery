@@ -1,0 +1,44 @@
+<html>
+   <head>
+      <title>Class Selector</title>
+      <script type="text/javascript"  src="jquery-2.1.4.js"></script>
+
+   </head>
+	
+   <body>
+   <script type="text/javascript">
+   <!-- -->
+   
+	 $(function(){	
+	 
+		<!-- selects div tag with small class. We can also specify the id of div tag-->
+		<!--$('div.small').css('background-color','yellow');-->
+		<!--selects element with both small and big classes -->
+		<!--$('.small.big').css('background-color','yellow');-->
+		<!--selects element with parent  with big class  and child with small class -->
+			$('.big .small').css('background-color','yellow');
+		});
+     
+	
+   </script>
+	 
+	 <h3>Class Selector 1</h3>
+	  <br/><br/>
+	  <span class="small big">Span </span>
+	  <br/><br/>
+	  <div class="big" id=div1>DIV 1 Parent 
+		<br/><br/>
+			<div class="big">DIV</div>
+		<br/>
+			<p class=small>Paragraph </p>
+	  </div>
+	 
+		  <div class="small">DIV 2 </div>
+	 
+	
+
+	
+	
+
+   </body>
+</html>

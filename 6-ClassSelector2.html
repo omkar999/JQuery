@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <title>Class Selector</title>
+      <script type="text/javascript"  src="jquery-2.1.4.js"></script>
+
+   </head>
+	
+   <body>
+   <script type="text/javascript">
+   <!-- -->
+   
+	 $(function(){	
+		 <!--class with big or small values -->
+			 <!--$('.big,.small').css('background-color','yellow'); -->
+			 <!--class with big and small values -->
+			 <!--$('.big.small').css('background-color','yellow'); -->
+			
+			$('.small .big').css('background-color','yellow');
+			
+		});
+     
+	
+   </script>
+	 
+	 <p class="big"> BIG  </p>	 
+	 <p class="small"> SMALL  </p> 
+	 <p class="big small">  BIG SMALL </p>	 
+	 <p class="small"> SMALL BIG  
+		 <p class="big">EMBEDDED BIG  </p>	
+	 </p> 
+	
+	
+
+   </body>
+</html>

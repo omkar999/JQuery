@@ -1,0 +1,47 @@
+<html>
+   <head>
+      <title>Class Selector</title>
+      <script type="text/javascript"  src="jquery-2.1.4.js"></script>
+   </head>
+	
+   <body>
+   <script type="text/javascript">
+	 $(function(){	
+		  <!--Displays the count of td tags -->
+		alert('Count='+$('td').length);
+		  <!--changes bg color to red for tr elements -->
+		$('tr').css('background-color','red');		
+		  <!-- alerts the full html code-->
+		alert($('table').html());	
+		  <!--alerts html code for each tr at a time -->
+		$('table tr').each(function(){
+		alert($(this).html());
+		  <!-- changes even tr  element rows to grey  and odd rows to yellow -->
+		$('tr:even').css('background-color','grey');
+		$('tr:odd').css('background-color','yellow');
+ <!-- changes even tr rows to grey  elements with id=table1 -->		
+		$('#table1 tr:even').css('background-color','blue');
+		});
+		});
+
+   </script>
+	 
+	<table id= "table1" style="width:30%" border=5>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>80</td>
+  </tr>
+</table>
+   </body>
+</html>

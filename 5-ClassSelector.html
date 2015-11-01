@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <title>Class Selector</title>
+      <script type="text/javascript"  src="jquery-2.1.4.js"></script>
+  
+   </head>
+	
+   <body>
+   <script type="text/javascript">
+   
+     $(function(){	
+			$('p.big,.small').mouseover(function(){
+				$(this).css('border','5px solid red');
+			});
+		});
+		
+      
+   </script>
+	 
+	 <h3>Class Selector 1</h3>
+	  <br/><br/>
+	  <span class=small>small class Span 1</span>
+	  <br/><br/>
+	  <div class=small>small class div</div>
+	  <br/>
+	  <span class=big>big class Span 2</span>
+	  <br/>
+	  <p class=big>big class Paragraph</p>
+	
+	 <br/> <br/>
+	
+	
+
+   </body>
+</html>
